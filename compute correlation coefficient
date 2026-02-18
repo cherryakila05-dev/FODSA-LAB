@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Sample data
+data = {
+    "X": [10, 20, 30, 40, 50],
+    "Y": [15, 25, 35, 45, 55]
+}
+
+df = pd.DataFrame(data)
+
+print("DataFrame:")
+print(df)
+
+# Compute correlation coefficient
+correlation = df["X"].corr(df["Y"])
+
+print("\nCorrelation Coefficient:", correlation)
