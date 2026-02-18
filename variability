@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Sample data
+data = {
+    "Marks": [10, 20, 30, 40, 50]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+print("DataFrame:")
+print(df)
+
+# Calculate Variance
+variance = df["Marks"].var()
+
+# Calculate Standard Deviation
+std_deviation = df["Marks"].std()
+
+print("\nVariance:", variance)
+print("Standard Deviation:", std_deviation)
