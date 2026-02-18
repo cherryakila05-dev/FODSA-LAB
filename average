@@ -1,0 +1,24 @@
+import pandas as pd
+
+# Sample data
+data = {
+    "Name": ["Alice", "Bob", "Charlie", "David"],
+    "Math": [85, 90, 78, 92],
+    "Science": [88, 76, 95, 89]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+print("DataFrame:")
+print(df)
+
+# Calculate average of each subject
+print("\nAverage Marks:")
+print(df[["Math", "Science"]].mean())
+
+# Calculate average marks of each student
+df["Average"] = df[["Math", "Science"]].mean(axis=1)
+
+print("\nDataFrame with Student Average:")
+print(df)
