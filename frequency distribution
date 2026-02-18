@@ -1,0 +1,18 @@
+import pandas as pd
+
+# Sample data
+data = {
+    "Grade": ["A", "B", "A", "C", "B", "A", "B", "C", "A", "B"]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Frequency distribution
+frequency = df["Grade"].value_counts()
+
+print("DataFrame:")
+print(df)
+
+print("\nFrequency Distribution:")
+print(frequency)
